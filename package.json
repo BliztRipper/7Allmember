@@ -1,0 +1,13 @@
+{
+  "name": "7Allmember",
+  "version": "1.0.0",
+  "main": "dist/index .html",
+  "repository": "https://github.com/BliztRipper/7Allmember.git",
+  "author": "Arnon <nonthegenocide@me.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "jq-signature": "^2.0.0",
+    "jquery": "^3.3.1"
+  }
+}
