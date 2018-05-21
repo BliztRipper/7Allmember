@@ -1,3 +1,31 @@
 extends _template
 block body
- he hello wordl
+  .header.d-flex.justify-content-center.border-bottom
+    .sprite--logo
+  section
+    .container.d-flex.align-items-center.flex-column
+      .sprite--allCard
+      span.connectCard เชื่อมบัตร All Member Visa Card
+      span.connectCard--detail กรุณากรอกข้อมูลเพิ่มเติม 
+  section
+    .container.form
+      form.needs-validation(novalidate)
+        .col-12
+          label.form__label(for='validate-tel') เบอร์โทรศัพท์
+          input.form-control#validate-tel(type='tel' placeholder='กรอกเบอร์โทรของคุณ' required)
+          .valid-feedback 
+          .invalid-feedback กรุณากรอกข้อมูลให้ถูกต้อง
+        .col-12(style='margin-top:34px;')
+          label.form__label(for='validate-id') เลขบัตรประชาชน
+          input.form-control#validate-id(type='number' placeholder='กรอกเลขบัตรประชาชนของคุณ' required)
+          .valid-feedback 
+          .invalid-feedback กรุณากรอกข้อมูลให้ถูกต้อง
+        .col-12(style='margin-top:34px;')
+          label.form__label(for='validate-address') ที่อยู่ปัจจุบัน
+          input.form-control#validate-address(type='text' placeholder='กรอกที่อยู่ของคุณ' required)
+          .valid-feedback 
+          .invalid-feedback กรุณากรอกข้อมูลให้ถูกต้อง
+        .next  
+          button.btn.next--btn(type='submit') ถัดไป 
+
+

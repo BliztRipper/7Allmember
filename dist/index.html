@@ -5,9 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>7-11 All Member</title>
+    <link rel="stylesheet" href="css/style.css"/>
   </head>
   <body>
-    <he>hello wordl</he>
+    <div class="header d-flex justify-content-center border-bottom">
+      <div class="sprite--logo"></div>
+    </div>
+    <section>
+      <div class="container d-flex align-items-center flex-column">
+        <div class="sprite--allCard"></div><span class="connectCard">เชื่อมบัตร All Member Visa Card</span><span class="connectCard--detail">กรุณากรอกข้อมูลเพิ่มเติม </span>
+      </div>
+    </section>
+    <section>
+      <div class="container form">
+        <form class="needs-validation" novalidate="novalidate">
+          <div class="col-12">
+            <label class="form__label" for="validate-tel">เบอร์โทรศัพท์</label>
+            <input class="form-control" id="validate-tel" type="tel" placeholder="กรอกเบอร์โทรของคุณ" required="required"/>
+            <div class="valid-feedback"> </div>
+            <div class="invalid-feedback">กรุณากรอกข้อมูลให้ถูกต้อง</div>
+          </div>
+          <div class="col-12" style="margin-top:34px;">
+            <label class="form__label" for="validate-id">เลขบัตรประชาชน</label>
+            <input class="form-control" id="validate-id" type="number" placeholder="กรอกเลขบัตรประชาชนของคุณ" required="required"/>
+            <div class="valid-feedback"> </div>
+            <div class="invalid-feedback">กรุณากรอกข้อมูลให้ถูกต้อง</div>
+          </div>
+          <div class="col-12" style="margin-top:34px;">
+            <label class="form__label" for="validate-address">ที่อยู่ปัจจุบัน</label>
+            <input class="form-control" id="validate-address" type="text" placeholder="กรอกที่อยู่ของคุณ" required="required"/>
+            <div class="valid-feedback"> </div>
+            <div class="invalid-feedback">กรุณากรอกข้อมูลให้ถูกต้อง</div>
+          </div>
+          <div class="next"> 
+            <button class="btn next--btn" type="submit">ถัดไป </button>
+          </div>
+        </form>
+      </div>
+    </section>
     <script src="js/main.js"></script>
   </body>
 </html>
