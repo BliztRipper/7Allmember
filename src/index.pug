@@ -9,23 +9,21 @@ block body
       span.connectCard--detail กรุณากรอกข้อมูลเพิ่มเติม 
   section
     .container.form
-      form.needs-validation(novalidate)
+      form.needs-validation(action='kyc.html' method='' novalidate)
         .col-12
           label.form__label(for='validate-tel') เบอร์โทรศัพท์
-          input.form-control#validate-tel(type='tel' placeholder='กรอกเบอร์โทรของคุณ' required)
+          input.form-control#validate-tel(type='tel' placeholder='089-9999999' required)
           .valid-feedback 
           .invalid-feedback กรุณากรอกข้อมูลให้ถูกต้อง
         .col-12(style='margin-top:34px;')
           label.form__label(for='validate-id') เลขบัตรประชาชน
-          input.form-control#validate-id(type='number' placeholder='กรอกเลขบัตรประชาชนของคุณ' required)
+          input.form-control#validate-id(type='number' placeholder='1-234-5678-9012-5' required)
           .valid-feedback 
           .invalid-feedback กรุณากรอกข้อมูลให้ถูกต้อง
         .col-12(style='margin-top:34px;')
           label.form__label(for='validate-address') ที่อยู่ปัจจุบัน
-          input.form-control#validate-address(type='text' placeholder='กรอกที่อยู่ของคุณ' required)
+          input.form-control#validate-address(type='text' placeholder='เลขที่บ้าน, แขวง, อำเภอ, จังหวัด' required)
           .valid-feedback 
           .invalid-feedback กรุณากรอกข้อมูลให้ถูกต้อง
         .next  
-          button.btn.next--btn(type='submit') ถัดไป 
-
-
+          button.btn.next--btn(type='submit') ถัดไป

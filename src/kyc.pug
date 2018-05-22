@@ -1,0 +1,37 @@
+extends _template
+block body
+  .header.d-flex.justify-content-center.border-bottom
+    .sprite--logo
+  section
+    .container.d-flex.align-items-center.flex-column
+      .sprite--allCard
+      span.connectCard เชื่อมบัตร All Member Visa Card
+      span.connectCard--detail กรุณากรอกข้อมูลเพิ่มเติม 
+  section
+    .container.form
+      form.needs-validation(action='signing.html' method='' novalidate)
+        .col-12
+          label.form__label(for='validate-backId') หมายเลขหลังบัตร (Member ID) 18 หลัก
+          input.form-control#validate-backId(type='number' placeholder='e.g.2389-2398-3489-3984-34' required)
+          .valid-feedback 
+          .invalid-feedback กรุณากรอกข้อมูลให้ถูกต้อง
+        .col-12(style='margin-top:34px;')
+          label.form__label(for='validate-frontId') หมายเลขหน้าบัตร 4 หลักสุดท้าย
+          input.form-control#validate-frontId(type='number' placeholder='8434' required)
+          .valid-feedback 
+          .invalid-feedback กรุณากรอกข้อมูลให้ถูกต้อง
+        .col-12(style='margin-top:34px;')
+          label.form__label(for='validate-job') อาชีพ
+          select.form-control#validate-job(required)
+            option  
+            option เศรษฐี 
+            option Hi-So 
+          .valid-feedback 
+          .invalid-feedback กรุณากรอกข้อมูลให้ถูกต้อง
+        .col-12(style='margin-top:34px;')
+          label.form__label(for='validate-jobaddress') ที่อยู่ที่ทำงาน
+          input.form-control#validate-jobaddress(type='text' placeholder='ชื่อบริษัท จังหวัด' required)
+          .valid-feedback 
+          .invalid-feedback กรุณากรอกข้อมูลให้ถูกต้อง
+        .next  
+          button.btn.next--btn(type='submit') ถัดไป

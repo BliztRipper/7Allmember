@@ -18,22 +18,32 @@
     </section>
     <section>
       <div class="container form">
-        <form class="needs-validation" action="kyc.html" method="" novalidate="novalidate">
+        <form class="needs-validation" action="signing.html" method="" novalidate="novalidate">
           <div class="col-12">
-            <label class="form__label" for="validate-tel">เบอร์โทรศัพท์</label>
-            <input class="form-control" id="validate-tel" type="tel" placeholder="089-9999999" required="required"/>
+            <label class="form__label" for="validate-backId">หมายเลขหลังบัตร (Member ID) 18 หลัก</label>
+            <input class="form-control" id="validate-backId" type="number" placeholder="e.g.2389-2398-3489-3984-34" required="required"/>
             <div class="valid-feedback"> </div>
             <div class="invalid-feedback">กรุณากรอกข้อมูลให้ถูกต้อง</div>
           </div>
           <div class="col-12" style="margin-top:34px;">
-            <label class="form__label" for="validate-id">เลขบัตรประชาชน</label>
-            <input class="form-control" id="validate-id" type="number" placeholder="1-234-5678-9012-5" required="required"/>
+            <label class="form__label" for="validate-frontId">หมายเลขหน้าบัตร 4 หลักสุดท้าย</label>
+            <input class="form-control" id="validate-frontId" type="number" placeholder="8434" required="required"/>
             <div class="valid-feedback"> </div>
             <div class="invalid-feedback">กรุณากรอกข้อมูลให้ถูกต้อง</div>
           </div>
           <div class="col-12" style="margin-top:34px;">
-            <label class="form__label" for="validate-address">ที่อยู่ปัจจุบัน</label>
-            <input class="form-control" id="validate-address" type="text" placeholder="เลขที่บ้าน, แขวง, อำเภอ, จังหวัด" required="required"/>
+            <label class="form__label" for="validate-job">อาชีพ</label>
+            <select class="form-control" id="validate-job" required="required">
+              <option> </option>
+              <option>เศรษฐี </option>
+              <option>Hi-So </option>
+            </select>
+            <div class="valid-feedback"> </div>
+            <div class="invalid-feedback">กรุณากรอกข้อมูลให้ถูกต้อง</div>
+          </div>
+          <div class="col-12" style="margin-top:34px;">
+            <label class="form__label" for="validate-jobaddress">ที่อยู่ที่ทำงาน</label>
+            <input class="form-control" id="validate-jobaddress" type="text" placeholder="ชื่อบริษัท จังหวัด" required="required"/>
             <div class="valid-feedback"> </div>
             <div class="invalid-feedback">กรุณากรอกข้อมูลให้ถูกต้อง</div>
           </div>
