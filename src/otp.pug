@@ -6,7 +6,7 @@ block body
     .comfirm-otp__desc รหัสยืนยันจะถูกส่ง SMS ไปที่เบอร์
     .comfirm-otp__num 099-999-9999
   .container(style='width: 280px;')  
-    form
+    form(action='connect.html' method='' novalidate)
       .otp.d-flex.justify-content-center.justify-content-around(action="")
         input(type='tel' maxlenght='1')
         input(type='tel' maxlenght='1')
@@ -14,5 +14,7 @@ block body
         input(type='tel' maxlenght='1')
         input(type='tel' maxlenght='1')
         input(type='tel' maxlenght='1')
-      .otp__ref Ref รหัสยืนยัน: HUTV
+      .otp__ref Ref รหัสยืนยัน: HUTV 
       button.otp__reset.mx-auto.d-block(type='reset') ขอรหัสยืนยันอีกครั้ง
+      .next  
+          button.btn.next--btn(type='submit') ถัดไป

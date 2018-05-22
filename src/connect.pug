@@ -1,0 +1,12 @@
+extends _template
+block body
+  .header.d-flex.justify-content-center.border-bottom
+    h1.header__title ยืนยันการเชื่อมต่อบัญชี
+  .container
+    .d-flex.align-items-center.justify-content-around(style='height:200px; padding-top:50px;')
+      .sprite--7app
+      .sprite--tmnapp
+    p.connect__text เชื่อมบัตร All Member Visa Card <br/>กับบัญชีทรูมันนี่ วอลเล็ท
+    .form-check
+      input#check1.form-check-input(type='checkbox')
+      label.form-check-label.connect__term(for='check1') ยอมรับ ข้อกำหนด และ เงื่อนไขความเป็นส่วนตัว
