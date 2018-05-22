@@ -1,0 +1,18 @@
+extends _template
+block body
+  .header.d-flex.justify-content-center.border-bottom
+    h1.header__title กรอกรหัสยืนยัน
+  .comfirm-otp.d-flex.justify-content-around.align-items-center.py-4.border
+    .comfirm-otp__desc รหัสยืนยันจะถูกส่ง SMS ไปที่เบอร์
+    .comfirm-otp__num 099-999-9999
+  .container(style='width: 280px;')  
+    form
+      .otp.d-flex.justify-content-center.justify-content-around(action="")
+        input(type='tel' maxlenght='1')
+        input(type='tel' maxlenght='1')
+        input(type='tel' maxlenght='1')
+        input(type='tel' maxlenght='1')
+        input(type='tel' maxlenght='1')
+        input(type='tel' maxlenght='1')
+      .otp__ref Ref รหัสยืนยัน: HUTV
+      button.otp__reset.mx-auto.d-block(type='reset') ขอรหัสยืนยันอีกครั้ง

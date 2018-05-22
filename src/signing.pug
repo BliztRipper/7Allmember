@@ -4,4 +4,12 @@ block body
     .sprite--logo
   section
     .container.d-flex.align-items-center.flex-column
+      span.connectCard--detail.pb-4.pt-4 กรุณาเซ็นชื่อของคุณ
+      .js-signature(data-border="1px solid #979797" data-line-color="#ff8300" data-height="300" data-auto-fit="true")
+      .signature-action
+        .sprite--signature
+        .clear-sign.d-inline-block(onclick="clearCanvas();") เซ็นใหม่
+    .container    
+      .next  
+        button.btn.next--btn(type='submit' onclick="saveCanvas();") ถัดไป
       
