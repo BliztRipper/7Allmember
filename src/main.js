@@ -29,7 +29,7 @@ function clearCanvas() {
 function saveCanvas() {
   var signature = $('.js-signature').jqSignature('getDataURL');
   console.log(signature);
-  window.location.href = 'https://www.google.co.th/'
+  window.location.href = 'otp.html'
 }
 
 /*OTP auto focus*/
@@ -39,3 +39,9 @@ $(".otp input").keyup(function () {
     input_flds.eq(input_flds.index(this) + 1).focus();
   }
 });
+
+// $('#toSuccess').click(function(){
+//   setTimeout(function(){
+//     window.location.href='success.html'
+//   }, 500)
+// })

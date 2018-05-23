@@ -12,15 +12,43 @@
       <h1 class="header__title">ยืนยันการเชื่อมต่อบัญชี</h1>
     </div>
     <div class="container">
-      <div class="d-flex align-items-center justify-content-around" style="height:200px; padding-top:50px;">
-        <div class="sprite--7app"></div>
-        <div class="sprite--tmnapp"></div>
+      <div class="wraper mx-auto" style="width:150px;">
+        <div class="d-flex align-items-center justify-content-around" style="height:200px; padding-top:50px;">
+          <div class="sprite--7app"></div>
+          <div class="sprite--arrow"></div>
+          <div class="sprite--tmnapp"></div>
+        </div>
       </div>
       <p class="connect__text">เชื่อมบัตร All Member Visa Card <br/>กับบัญชีทรูมันนี่ วอลเล็ท</p>
-      <div class="form-check">
-        <input class="form-check-input" id="check1" type="checkbox"/>
-        <label class="form-check-label connect__term" for="check1">ยอมรับ ข้อกำหนด และ เงื่อนไขความเป็นส่วนตัว</label>
-      </div>
+      <form class="form-accept needs-validation" action="success.html" novalidate="novalidate">
+        <div class="form-group">
+          <div class="form-check pl-0">
+            <input class="styled-checkbox form-check-input" id="styled-checkbox-2" type="checkbox" required="required"/>
+            <label class="connect__term" for="styled-checkbox-2">ยอมรับ ข้อกำหนด และ เงื่อนไขความเป็นส่วนตัว</label>
+            <div class="invalid-feedback">กรุณากดยอมรับข้อกำหนดและเงื่อนไข</div>
+            <button class="btn next--btn" type="submit" data-toggle="modal" data-target="#tc">ยืนยัน</button>
+            <div class="modal fade" id="tc" tabidnex="-1" role="dialog" aria-labelledby="TermModal" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header"> 
+                    <h5 class="modal-title" id="TermModal">เงื่อนไขและกติกาการร่วมกิจกรรม</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  </div>
+                  <div class="modal-body"> 
+                    <p>เงื่อนไขการใช้บริการ True Money Wallet ผ่านทางแอปพลิเคชัน 7-Eleven TH โดยการคลิกปุ่ม “ยอมรับข้อกำหนดและเงื่อนไข” ด้านล่างนี้ ข้าพเจ้า (ต่อไปจะเรียกว่า “ผู้ใช้บริการ”) ตกลงที่จะใช้บริการของบริษัท ทรู มันนี่ จำกัด (ต่อไปจะเรียกว่า “บริษัท”) ซึ่งเป็นผู้ให้บริการเงินอิเล็กทรอนิกส์ เพื่อให้ผู้ใช้บริการสามารถใช้เงินอิเล็กทรอนิกส์ซึ่งได้เติมเงินเข้ากระเป๋าเงินอิเล็กทรอนิกส์ของผู้ใช้บริการซึ่งให้บริการโดยบริษัท (ต่อไปนี้จะเรียกว่า “True Money Wallet”) ไว้ล่วงหน้าแล้ว มาชำระค่าสินค้าแทนการชำระด้วยเงินสด ณ ร้าน 7-Eleven หรือร้านค้าอื่นใดตามที่บริษัทกำหนด ผ่านทางแอปพลิเคชัน7-Eleven TH (ต่อไปจะเรียกว่า “บริการ”) และผู้ใช้บริการตกลงที่จะปฏิบัติและผูกพันตามข้อกำหนดและเงื่อนไขการใช้บริการ ของบริษัท ทรู มันนี่ จำกัด (ต่อไปจะเรียกว่า “ข้อกำหนดและเงื่อนไข”) ดังต่อไปนี้ทุกประการ </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn next--modal" type="button" data-dismiss="modal">ปิด     </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cancle"> 
+          <button class="btn cancle--btn" type="reset">ยกเลิก</button>
+        </div>
+      </form>
     </div>
     <script src="js/main.js"></script>
   </body>
