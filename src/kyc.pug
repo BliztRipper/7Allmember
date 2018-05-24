@@ -13,13 +13,13 @@ block body
       form.needs-validation(action='signing.html' method='' novalidate)
         .col-12
           label.form__label(for='validate-backId') หมายเลขหลังบัตร (Member ID) 18 หลัก 
-          input.form-control#validate-backId(type='tel' placeholder='e.g.2389-2398-3489-3984-34' pattern=".{22}" required)
-          .valid-feedback 
+          input.form-control#validate-backId(type='tel' placeholder='9999-9999-9999-9999-99' pattern=".{22}" required)
+          //- .valid-feedback 
           .invalid-feedback กรุณากรอกข้อมูลให้ถูกต้อง
         .col-12(style='margin-top:34px;')
           label.form__label(for='validate-frontId') หมายเลขหน้าบัตร 4 หลักสุดท้าย
           input.form-control.validate-frontId(type='tel' placeholder='8434' pattern=".{4}" required)
-          .valid-feedback 
+          //- .valid-feedback 
           .invalid-feedback กรุณากรอกข้อมูลให้ถูกต้อง
         .col-12(style='margin-top:34px;')
           label.form__label(for='validate-job') อาชีพ
@@ -27,12 +27,12 @@ block body
             option  
             option เศรษฐี 
             option Hi-So 
-          .valid-feedback 
+          //- .valid-feedback 
           .invalid-feedback กรุณากรอกข้อมูลให้ถูกต้อง
         .col-12(style='margin-top:34px;')
           label.form__label(for='validate-jobaddress') ที่อยู่ที่ทำงาน
           input.form-control#validate-jobaddress(type='text' placeholder='ชื่อบริษัท จังหวัด' required)
-          .valid-feedback 
+          //- .valid-feedback 
           .invalid-feedback กรุณากรอกข้อมูลให้ถูกต้อง
         .next  
-          button.btn.next--btn(type='submit') ถัดไป
+          button.btn.next--btn#check-invalid(type='submit' disabled) ถัดไป

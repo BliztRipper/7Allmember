@@ -13,18 +13,18 @@ block body
       form.needs-validation(action='kyc.html' method='' novalidate)
         .col-12
           label.form__label(for='validate-tel') เบอร์โทรศัพท์
-          input.form-control#validate-tel(type='tel' value='' placeholder='089-999-9999' pattern=".{12}" required)
-          .valid-feedback 
+          input.form-control#validate-tel(type='tel' value='' placeholder='099-999-9999' pattern=".{12}" required)
+          //- .valid-feedback 
           .invalid-feedback กรุณากรอกข้อมูลให้ถูกต้อง
         .col-12(style='margin-top:34px;')
           label.form__label(for='validate-id') เลขบัตรประชาชน
-          input.form-control#validate-id(type='tel' value='' placeholder='1-234-5678-9012-5' pattern=".{17}" required)
-          .valid-feedback 
+          input.form-control#validate-id(type='tel' value='' placeholder='9-999-9999-9999-9' pattern=".{17}" required)
+          //- .valid-feedback 
           .invalid-feedback กรุณากรอกข้อมูลให้ถูกต้อง
         .col-12(style='margin-top:34px;')
           label.form__label(for='validate-address') ที่อยู่ปัจจุบัน
           input.form-control#validate-address(type='text' placeholder='เลขที่บ้าน, แขวง, อำเภอ, จังหวัด' required)
-          .valid-feedback 
+          //- .valid-feedback 
           .invalid-feedback กรุณากรอกข้อมูลให้ถูกต้อง
         .next  
-          button.btn.next--btn(type='submit') ถัดไป
+          button.btn.next--btn#check-invalid(type='submit' disabled) ถัดไป
