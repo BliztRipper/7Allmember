@@ -1,6 +1,7 @@
 //@prepros-prepend ../node_modules/jquery/dist/jquery.min.js
 //@prepros-prepend ../node_modules/jq-signature/jq-signature.min.js
 //@prepros-prepend ../node_modules/bootstrap/dist/js/bootstrap.bundle.js
+//@prepros-prepend ../node_modules/cleave.js/dist/cleave.min.js 
 
 /*Form Validation*/
 (function () {
@@ -40,8 +41,5 @@ $(".otp input").keyup(function () {
   }
 });
 
-// $('#toSuccess').click(function(){
-//   setTimeout(function(){
-//     window.location.href='success.html'
-//   }, 500)
-// })
+
+

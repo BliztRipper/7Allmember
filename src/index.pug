@@ -1,5 +1,6 @@
 extends _template
 block body
+  -var page = 'home'
   .header.d-flex.justify-content-center.border-bottom
     .sprite--logo
   section
@@ -12,12 +13,12 @@ block body
       form.needs-validation(action='kyc.html' method='' novalidate)
         .col-12
           label.form__label(for='validate-tel') เบอร์โทรศัพท์
-          input.form-control#validate-tel(type='tel' value='' placeholder='089-999-9999' required)
+          input.form-control#validate-tel(type='tel' value='' placeholder='089-999-9999' pattern=".{12}" required)
           .valid-feedback 
           .invalid-feedback กรุณากรอกข้อมูลให้ถูกต้อง
         .col-12(style='margin-top:34px;')
           label.form__label(for='validate-id') เลขบัตรประชาชน
-          input.form-control#validate-id(type='number' value='' placeholder='1-234-5678-9012-5' required)
+          input.form-control#validate-id(type='tel' value='' placeholder='1-234-5678-9012-5' pattern=".{17}" required)
           .valid-feedback 
           .invalid-feedback กรุณากรอกข้อมูลให้ถูกต้อง
         .col-12(style='margin-top:34px;')

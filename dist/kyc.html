@@ -20,14 +20,14 @@
       <div class="container form">
         <form class="needs-validation" action="signing.html" method="" novalidate="novalidate">
           <div class="col-12">
-            <label class="form__label" for="validate-backId">หมายเลขหลังบัตร (Member ID) 18 หลัก</label>
-            <input class="form-control" id="validate-backId" type="number" placeholder="e.g.2389-2398-3489-3984-34" required="required"/>
+            <label class="form__label" for="validate-backId">หมายเลขหลังบัตร (Member ID) 18 หลัก </label>
+            <input class="form-control" id="validate-backId" type="tel" placeholder="e.g.2389-2398-3489-3984-34" pattern=".{22}" required="required"/>
             <div class="valid-feedback"> </div>
             <div class="invalid-feedback">กรุณากรอกข้อมูลให้ถูกต้อง</div>
           </div>
           <div class="col-12" style="margin-top:34px;">
             <label class="form__label" for="validate-frontId">หมายเลขหน้าบัตร 4 หลักสุดท้าย</label>
-            <input class="form-control" id="validate-frontId" type="number" placeholder="8434" required="required"/>
+            <input class="form-control validate-frontId" type="tel" placeholder="8434" pattern=".{4}" required="required"/>
             <div class="valid-feedback"> </div>
             <div class="invalid-feedback">กรุณากรอกข้อมูลให้ถูกต้อง</div>
           </div>
@@ -54,5 +54,11 @@
       </div>
     </section>
     <script src="js/main.js"></script>
+    <script>
+      var formatBackID = new Cleave('#validate-backId', {
+        delimiter: '-', 
+        blocks: [4, 4, 4, 4, 2]
+      });
+    </script>
   </body>
 </html>
