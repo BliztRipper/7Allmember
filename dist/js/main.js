@@ -6467,6 +6467,7 @@
     var forms = document.getElementsByClassName('needs-validation');
     var validation = Array.prototype.filter.call(forms, function (form) {
       form.addEventListener('keyup', function (event) {
+        document.getElementById("check-invalid").setAttribute("disabled", "disabled");
         if (form.checkValidity() === false) {
           event.preventDefault();
           event.stopPropagation();
