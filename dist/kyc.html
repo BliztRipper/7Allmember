@@ -29,7 +29,7 @@
           </div>
           <div class="col-12" style="margin-top:34px;">
             <label class="form__label" for="validate-frontId">หมายเลขหน้าบัตร 4 หลักสุดท้าย</label>
-            <input class="form-control validate-frontId" type="tel" placeholder="8434" pattern=".{4}" required="required"/>
+            <input class="form-control" id="validate-frontId" type="tel" placeholder="8434" pattern=".{4}" required="required"/>
             <div class="valid-feedback"> </div>
             <div class="invalid-feedback">กรุณากรอกหมายเลขหน้าบัตร 4 หลัก 
               <div class="invalid-feedback__desc"> </div>
@@ -66,6 +66,9 @@
       var formatBackID = new Cleave('#validate-backId', {
         delimiter: '-', 
         blocks: [4, 4, 4, 4, 2]
+      });
+      var formatFrontID = new Cleave('#validate-frontId', {
+        blocks: [4]
       });
     </script>
   </body>
