@@ -32,6 +32,10 @@ $('#styled-checkbox-2').click(function(){
   }
 })
 
+// $('js-signature').click(function (e) {
+//   $('button.btn.next--btn').removeAttr('disabled')
+// })
+
 /* Signature Section */
 $('.js-signature').jqSignature();
 function clearCanvas() {
