@@ -22,17 +22,23 @@
           <div class="col-12">
             <label class="form__label" for="validate-tel">เบอร์โทรศัพท์</label>
             <input class="form-control" id="validate-tel" type="tel" value="" placeholder="099-999-9999" pattern=".{12}" required="required"/>
-            <div class="invalid-feedback">กรุณากรอกข้อมูลให้ถูกต้อง</div>
+            <div class="invalid-feedback">กรุณากรอกเบอร์โทรศัพท์ 10 หลัก
+              <div class="invalid-feedback__desc"></div>
+            </div>
           </div>
           <div class="col-12" style="margin-top:34px;">
             <label class="form__label" for="validate-id">เลขบัตรประชาชน</label>
             <input class="form-control" id="validate-id" type="tel" value="" placeholder="9-999-9999-9999-9" pattern=".{17}" required="required"/>
-            <div class="invalid-feedback">กรุณากรอกข้อมูลให้ถูกต้อง</div>
+            <div class="invalid-feedback">กรุณากรอกเลขบัตรประชาชน 13 หลัก
+              <div class="invalid-feedback__desc"></div>
+            </div>
           </div>
           <div class="col-12" style="margin-top:34px;">
             <label class="form__label" for="validate-address">ที่อยู่ปัจจุบัน</label>
             <input class="form-control" id="validate-address" type="text" placeholder="เลขที่บ้าน, แขวง, อำเภอ, จังหวัด" required="required"/>
-            <div class="invalid-feedback">กรุณากรอกข้อมูลให้ถูกต้อง</div>
+            <div class="invalid-feedback">กรุณากรอกที่อยู่ปัจจุบัน
+              <div class="invalid-feedback__desc"></div>
+            </div>
           </div>
           <div class="next"> 
             <button class="btn next--btn" id="check-invalid" type="submit" disabled="disabled">ถัดไป</button>

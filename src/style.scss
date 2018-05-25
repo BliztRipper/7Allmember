@@ -146,12 +146,23 @@ body{
   }
   .valid-feedback {
     display: none;
-    width: 48px;
-    height: 48px;
+    width: 24px;
+    height: 24px;
     position: absolute;
-    top:1.3rem;
-    right: 0.5rem;
+    top:50%;
+    right: 1rem;
     background: url('./icSuccess.png') no-repeat;
+  }
+  .invalid-feedback {
+    &__desc{
+      display: block;
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      top:40%;
+      right: 1rem;
+      background: url('./icFailed.png') no-repeat;
+    }
   }
 }
 .clear-sign{

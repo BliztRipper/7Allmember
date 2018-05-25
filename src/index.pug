@@ -15,16 +15,19 @@ block body
           label.form__label(for='validate-tel') เบอร์โทรศัพท์
           input.form-control#validate-tel(type='tel' value='' placeholder='099-999-9999' pattern=".{12}" required)
           //- .valid-feedback 
-          .invalid-feedback กรุณากรอกข้อมูลให้ถูกต้อง
+          .invalid-feedback กรุณากรอกเบอร์โทรศัพท์ 10 หลัก
+            .invalid-feedback__desc
         .col-12(style='margin-top:34px;')
           label.form__label(for='validate-id') เลขบัตรประชาชน
           input.form-control#validate-id(type='tel' value='' placeholder='9-999-9999-9999-9' pattern=".{17}" required)
           //- .valid-feedback 
-          .invalid-feedback กรุณากรอกข้อมูลให้ถูกต้อง
+          .invalid-feedback กรุณากรอกเลขบัตรประชาชน 13 หลัก
+            .invalid-feedback__desc
         .col-12(style='margin-top:34px;')
           label.form__label(for='validate-address') ที่อยู่ปัจจุบัน
           input.form-control#validate-address(type='text' placeholder='เลขที่บ้าน, แขวง, อำเภอ, จังหวัด' required)
           //- .valid-feedback 
-          .invalid-feedback กรุณากรอกข้อมูลให้ถูกต้อง
+          .invalid-feedback กรุณากรอกที่อยู่ปัจจุบัน
+            .invalid-feedback__desc
         .next  
           button.btn.next--btn#check-invalid(type='submit' disabled) ถัดไป
