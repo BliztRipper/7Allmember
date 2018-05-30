@@ -10,12 +10,15 @@
     var forms = document.getElementsByClassName('needs-validation');
     var validation = Array.prototype.filter.call(forms, function (form) {
       form.addEventListener('keyup', function (event) {
-        document.getElementById("check-invalid").setAttribute("disabled", "disabled");
+        var btnClass = document.getElementById("check-invalid");
+        btnClass.setAttribute("disabled", "disabled");
+        btnClass.classList.add("btn-secondary");
         if (form.checkValidity() === false) {
           event.preventDefault();
           event.stopPropagation();
         }else{
-          document.getElementById("check-invalid").removeAttribute("disabled");
+          btnClass.removeAttribute("disabled");
+          btnClass.classList.remove("btn-secondary");
         }
         form.classList.add('was-validated');
       }, false);
