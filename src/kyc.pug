@@ -25,7 +25,7 @@ block body
             .invalid-feedback__desc 
         .col-12(style='margin-top:34px;')
           label.form__label(for='validate-job') อาชีพ
-          select.form-control#validate-job(required)
+          select.custom-select.form-control#validate-job(required)
             option  
             option เศรษฐี 
             option Hi-So 
@@ -39,4 +39,4 @@ block body
           .invalid-feedback  กรุณากรอกที่อยู่ที่ทำงาน
             .invalid-feedback__desc
         .next  
-          button.btn.next--btn#check-invalid(type='submit' disabled) ถัดไป
+          button.btn.next--btn.btn-secondary#check-invalid(type='submit' disabled) ถัดไป

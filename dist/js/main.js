@@ -6492,20 +6492,27 @@ $('#styled-checkbox-2').click(function(){
   }
 })
 
-// $('js-signature').click(function (e) {
-//   $('button.btn.next--btn').removeAttr('disabled')
-// })
+
 
 /* Signature Section */
 $('.js-signature').jqSignature();
+$('.js-signature').on('jq.signature.changed', function () {
+  $('.next--btn').attr('disabled', false);
+  $('.next--btn').removeClass('btn-secondary');
+});
+
 function clearCanvas() {
   $('.js-signature').jqSignature('clearCanvas');
+  $('.next--btn').attr('disabled', true);
+  $('.next--btn').addClass('btn-secondary');
 }
 function saveCanvas() {
   var signature = $('.js-signature').jqSignature('getDataURL');
   console.log(signature);
   window.location.href = 'otp.html'
 }
+
+
 
 /*OTP auto focus*/
 $(".otp input").keyup(function () {
