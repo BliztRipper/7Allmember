@@ -30,12 +30,17 @@ $('#styled-checkbox-2').click(function(){
   var $list = $('.next--btn');
   if ($list.attr('disabled')) {
     $list.removeAttr('disabled');
-  } else {
+  } else { 
     $list.attr('disabled', 'disabled');
   }
 })
 
-
+$(document).ready(function (){
+  $('.otp__reset').click(function(){
+    $('#check-invalid').attr('disabled', 'disabled');
+    $('#check-invalid').addClass('btn-secondary');
+  })
+})
 
 /* Signature Section */
 $('.js-signature').jqSignature();

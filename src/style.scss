@@ -307,7 +307,7 @@ body{
     border-radius: 2px;
   } // Box hover
   &:hover+label:before {
-    background: #147bd1;
+    // background: #147bd1;
   } // Box focus
   &:focus+label:before {
     box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);

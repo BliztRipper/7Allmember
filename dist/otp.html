@@ -16,19 +16,19 @@
       <div class="comfirm-otp__num">099-999-9999</div>
     </div>
     <div class="container" style="width: 280px;"> 
-      <form action="connect.html" method="" novalidate="novalidate">
+      <form class="needs-validation" action="connect.html" method="" novalidate="novalidate">
         <div class="otp d-flex justify-content-center justify-content-around" action="">
-          <input type="tel" maxlenght="1" autofocus="autofocus"/>
-          <input type="tel" maxlenght="1"/>
-          <input type="tel" maxlenght="1"/>
-          <input type="tel" maxlenght="1"/>
-          <input type="tel" maxlenght="1"/>
-          <input type="tel" maxlenght="1"/>
+          <input type="tel" maxlenght="1" autofocus="autofocus" required="required"/>
+          <input type="tel" maxlenght="1" required="required"/>
+          <input type="tel" maxlenght="1" required="required"/>
+          <input type="tel" maxlenght="1" required="required"/>
+          <input type="tel" maxlenght="1" required="required"/>
+          <input type="tel" maxlenght="1" required="required"/>
         </div>
         <div class="otp__ref">Ref รหัสยืนยัน: HUTV </div>
         <button class="otp__reset mx-auto d-block" type="reset">ขอรหัสยืนยันอีกครั้ง</button>
         <div class="next"> 
-          <button class="btn next--btn btn-secondary" type="submit">ถัดไป</button>
+          <button class="btn next--btn btn-secondary" id="check-invalid" type="submit" disabled="disabled">ถัดไป</button>
         </div>
       </form>
     </div>
