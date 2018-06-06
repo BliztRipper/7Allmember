@@ -6514,7 +6514,7 @@ function clearCanvas() {
 function saveCanvas() {
   var signature = $('.js-signature').jqSignature('getDataURL');
   console.log(signature);
-  // window.location.href = 'otp.html'
+  window.location.href = 'otp.html'
 }
 
 
