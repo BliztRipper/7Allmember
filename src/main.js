@@ -42,6 +42,11 @@ $(document).ready(function (){
     $('#check-invalid').attr('disabled', 'disabled');
     $('#check-invalid').addClass('btn-secondary');
   })
+  var dateobj = new Date();
+  var bcyear = dateobj.getFullYear() + 543;
+  function pad(n) {return n < 10 ? "0"+n : n;}
+  var result = pad(dateobj.getDate())+"/"+pad(dateobj.getMonth()+1)+"/"+bcyear;
+  $("#validate-dob").attr("placeholder",result);
 })
 
 /* Signature Section */

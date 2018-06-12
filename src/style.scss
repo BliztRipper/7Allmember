@@ -130,6 +130,9 @@ body{
   }
 }
 .form{
+  &-row{
+    margin-top: 34px;
+  }
    padding-top:2rem;
   .form-control{
     &::placeholder{
@@ -167,6 +170,11 @@ body{
       background: url('./icFailed.png') no-repeat;
     }
   }
+}
+.signature--detail{
+  font-size: 1rem;
+  font-weight: 700;
+  color:#333333;
 }
 .clear-sign{
   padding-top: 26px;

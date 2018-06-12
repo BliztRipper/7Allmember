@@ -30,9 +30,9 @@ html(lang="en")
           });
       else if page == 'kyc'
         script.
-          var formatBackID = new Cleave('#validate-backId', {
-            delimiter: '-', 
-            blocks: [4, 4, 4, 4, 2]
+          var formatBackID = new Cleave('#validate-dob', {
+            date: true,
+            datePattern: ['d', 'm', 'Y']
           });
       else 
         script.
