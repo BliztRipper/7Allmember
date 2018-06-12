@@ -6485,8 +6485,10 @@
 
 $('#styled-checkbox-2').click(function(){
   var $list = $('.next--btn');
+  var btnClass = document.getElementById("check-invalid");
   if ($list.attr('disabled')) {
     $list.removeAttr('disabled');
+    btnClass.classList.remove("btn-secondary");
   } else { 
     $list.attr('disabled', 'disabled');
   }

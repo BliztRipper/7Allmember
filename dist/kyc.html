@@ -20,19 +20,18 @@
       <div class="container form">
         <form class="needs-validation" action="signing.html" method="" novalidate="novalidate">
           <div class="col-12">
-            <label class="form__label" for="validate-backId">หมายเลขหลังบัตร (Member ID) 18 หลัก </label>
-            <input class="form-control" id="validate-backId" type="tel" placeholder="9999-9999-9999-9999-99" pattern=".{22}" required="required"/>
+            <label class="form__label" for="validate-name">ชื่อ (ภาษาไทย)</label>
+            <input class="form-control" id="validate-name" type="text" placeholder="" required="required"/>
             <div class="valid-feedback"> </div>
-            <div class="invalid-feedback">กรุณากรอกหมายเลขบัตร 18 หลัก
+            <div class="invalid-feedback">กรุณากรอกชื่อ
               <div class="invalid-feedback__desc"></div>
             </div>
           </div>
           <div class="col-12" style="margin-top:34px;">
-            <label class="form__label" for="validate-frontId">หมายเลขหน้าบัตร 4 หลักสุดท้าย</label>
-            <input class="form-control" id="validate-frontId" type="tel" placeholder="8434" pattern=".{4}" required="required"/>
-            <div class="valid-feedback"> </div>
-            <div class="invalid-feedback">กรุณากรอกหมายเลขหน้าบัตร 4 หลัก 
-              <div class="invalid-feedback__desc"> </div>
+            <label class="form__label" for="validate-address">ที่อยู่ปัจจุบัน</label>
+            <input class="form-control" id="validate-address" type="text" placeholder="เลขที่บ้าน, แขวง, อำเภอ, จังหวัด" required="required"/>
+            <div class="invalid-feedback">กรุณากรอกที่อยู่ปัจจุบัน
+              <div class="invalid-feedback__desc"></div>
             </div>
           </div>
           <div class="col-12" style="margin-top:34px;">
@@ -44,11 +43,11 @@
             </select>
             <div class="valid-feedback"> </div>
             <div class="invalid-feedback">กรุณาเลือกอาชีพ
-              <div class="invalid-feedback__desc"></div>
+              <div class="invalid-feedback__desc">    </div>
             </div>
           </div>
           <div class="col-12" style="margin-top:34px;">
-            <label class="form__label" for="validate-jobaddress">ที่อยู่ที่ทำงาน</label>
+            <label class="form__label" for="validate-jobaddress">สถานที่ทำงาน</label>
             <input class="form-control" id="validate-jobaddress" type="text" placeholder="ชื่อบริษัท จังหวัด" required="required"/>
             <div class="valid-feedback"> </div>
             <div class="invalid-feedback"> กรุณากรอกที่อยู่ที่ทำงาน
@@ -66,9 +65,6 @@
       var formatBackID = new Cleave('#validate-backId', {
         delimiter: '-', 
         blocks: [4, 4, 4, 4, 2]
-      });
-      var formatFrontID = new Cleave('#validate-frontId', {
-        blocks: [4]
       });
     </script>
   </body>

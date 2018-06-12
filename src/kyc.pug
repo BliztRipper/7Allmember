@@ -12,17 +12,16 @@ block body
     .container.form
       form.needs-validation(action='signing.html' method='' novalidate)
         .col-12
-          label.form__label(for='validate-backId') หมายเลขหลังบัตร (Member ID) 18 หลัก 
-          input.form-control#validate-backId(type='tel' placeholder='9999-9999-9999-9999-99' pattern=".{22}" required)
+          label.form__label(for='validate-name') ชื่อ (ภาษาไทย)
+          input.form-control#validate-name(type='text' placeholder='' required)
           .valid-feedback 
-          .invalid-feedback กรุณากรอกหมายเลขบัตร 18 หลัก
+          .invalid-feedback กรุณากรอกชื่อ
             .invalid-feedback__desc
         .col-12(style='margin-top:34px;')
-          label.form__label(for='validate-frontId') หมายเลขหน้าบัตร 4 หลักสุดท้าย
-          input.form-control#validate-frontId(type='tel' placeholder='8434' pattern=".{4}" required)
-          .valid-feedback 
-          .invalid-feedback กรุณากรอกหมายเลขหน้าบัตร 4 หลัก 
-            .invalid-feedback__desc 
+          label.form__label(for='validate-address') ที่อยู่ปัจจุบัน
+          input.form-control#validate-address(type='text' placeholder='เลขที่บ้าน, แขวง, อำเภอ, จังหวัด' required)
+          .invalid-feedback กรุณากรอกที่อยู่ปัจจุบัน
+            .invalid-feedback__desc
         .col-12(style='margin-top:34px;')
           label.form__label(for='validate-job') อาชีพ
           select.custom-select.form-control#validate-job(required)
@@ -31,9 +30,9 @@ block body
             option Hi-So 
           .valid-feedback 
           .invalid-feedback กรุณาเลือกอาชีพ
-            .invalid-feedback__desc
+            .invalid-feedback__desc     
         .col-12(style='margin-top:34px;')
-          label.form__label(for='validate-jobaddress') ที่อยู่ที่ทำงาน
+          label.form__label(for='validate-jobaddress') สถานที่ทำงาน
           input.form-control#validate-jobaddress(type='text' placeholder='ชื่อบริษัท จังหวัด' required)
           .valid-feedback 
           .invalid-feedback  กรุณากรอกที่อยู่ที่ทำงาน
