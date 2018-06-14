@@ -21,7 +21,7 @@
         <form class="needs-validation" action="kyc.html" method="" novalidate="novalidate">
           <div class="col-12">
             <label class="form__label" for="validate-tel">เบอร์โทรศัพท์</label>
-            <input class="form-control" id="validate-tel" type="tel" value="" placeholder="099-999-9999" pattern=".{12}" required="required"/>
+            <input class="form-control" id="validate-tel" type="tel" value="" onkeypress="return isNumberKey(event)" placeholder="099-999-9999" pattern=".{12}" required="required"/>
             <div class="valid-feedback"> </div>
             <div class="invalid-feedback">กรุณากรอกเบอร์โทรศัพท์ 10 หลัก
               <div class="invalid-feedback__desc"></div>
@@ -29,7 +29,7 @@
           </div>
           <div class="col-12 form-row">
             <label class="form__label" for="validate-id">เลขบัตรประชาชน</label>
-            <input class="form-control" id="validate-id" type="tel" value="" placeholder="9-999-9999-9999-9" pattern=".{17}" required="required"/>
+            <input class="form-control" id="validate-id" type="tel" value="" onkeypress="return isNumberKey(event)" placeholder="9-999-9999-9999-9" pattern=".{17}" required="required"/>
             <div class="valid-feedback"> </div>
             <div class="invalid-feedback">กรุณากรอกเลขบัตรประชาชน 13 หลัก
               <div class="invalid-feedback__desc"></div>
@@ -37,7 +37,7 @@
           </div>
           <div class="col-12 form-row">
             <label class="form__label" for="validate-backId">หมายเลขหลังบัตร (Member ID) 18 หลัก </label>
-            <input class="form-control" id="validate-backId" type="tel" value="" placeholder="9999-9999-9999-9999-99" pattern=".{22}" required="required"/>
+            <input class="form-control" id="validate-backId" type="tel" value="" onkeypress="return isNumberKey(event)" placeholder="9999-9999-9999-9999-99" pattern=".{22}" required="required"/>
             <div class="valid-feedback"> </div>
             <div class="invalid-feedback">กรุณากรอกหมายเลขบัตร 18 หลัก
               <div class="invalid-feedback__desc"></div>
@@ -45,7 +45,7 @@
           </div>
           <div class="col-12 form-row">
             <label class="form__label" for="validate-frontId">หมายเลขหน้าบัตร 4 หลักสุดท้าย</label>
-            <input class="form-control" id="validate-frontId" type="tel" value="" placeholder="9999" pattern=".{4}" required="required"/>
+            <input class="form-control" id="validate-frontId" type="tel" value="" onkeypress="return isNumberKey(event)" placeholder="9999" pattern=".{4}" required="required"/>
             <div class="valid-feedback"> </div>
             <div class="invalid-feedback">กรุณากรอกหมายเลขหน้าบัตร 4 หลัก 
               <div class="invalid-feedback__desc"></div>
