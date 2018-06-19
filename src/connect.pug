@@ -15,9 +15,10 @@ block body
           input.styled-checkbox.form-check-input#styled-checkbox-2(type="checkbox" required)
           label.connect__term(for='styled-checkbox-2') ยอมรับ <div style="color:#147bd1; display:inline" data-toggle='modal' data-target='#tc'>ข้อกำหนด</div> และ <div style="color:#147bd1; display:inline" data-toggle='modal' data-target='#tc'>เงื่อนไขความเป็นส่วนตัว</div>
           .invalid-feedback กรุณากดยอมรับข้อกำหนดและเงื่อนไข
-          button.btn.next--btn(type='submit' disabled) ยืนยัน
-          .cancle  
-            button.btn.cancle--btn.btn-secondary(type='reset') ยกเลิก
+        .next  
+          button.btn.next--btn.btn-secondary#check-invalid(type='submit' disabled) ถัดไป
+        .cancle  
+          button.btn.cancle--btn.btn-secondary(type='reset') ยกเลิก
           #tc.modal.fade(tabidnex='-1' role='dialog' aria-labelledby='TermModal' aria-hidden='true')
             .modal-dialog(role='document')
               .modal-content

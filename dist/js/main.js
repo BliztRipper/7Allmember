@@ -6461,7 +6461,7 @@
 //@prepros-prepend ../node_modules/cleave.js/dist/cleave.min.js 
 
 /*Form Validation*/
-(function () {
+(function form_check() {
   'use strict';
   window.addEventListener('load', function () {
     var forms = document.getElementsByClassName('needs-validation');
@@ -6485,20 +6485,21 @@
 
 $('#styled-checkbox-2').click(function(){
   var $list = $('.next--btn');
-  var btnClass = document.getElementById("check-invalid");
+  var btnClass = $('#check-invalid')
   if ($list.attr('disabled')) {
     $list.removeAttr('disabled');
-    btnClass.classList.remove("btn-secondary");
+    btnClass.removeClass("btn-secondary");
   } else { 
     $list.attr('disabled', 'disabled');
+    btnClass.addClass("btn-secondary");
   }
 })
 
 $(document).ready(function (){
-  $('.otp__reset').click(function(){
-    $('#check-invalid').attr('disabled', 'disabled');
-    $('#check-invalid').addClass('btn-secondary');
-  })
+  // $('.otp__reset').click(function(){
+  //   $('#check-invalid').attr('disabled', 'disabled');
+  //   $('#check-invalid').addClass('btn-secondary');
+  // })
   var dateobj = new Date();
   var bcyear = dateobj.getFullYear() + 543;
   function pad(n) {return n < 10 ? "0"+n : n;}

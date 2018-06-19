@@ -20,7 +20,7 @@ body{
   vertical-align: middle;
   &--allCard{
     @extend .sprite;
-    background-position: -12px -12px;
+    background-position: -12px -12px; 
     width: 92px;
     height: 60px;
     margin-top:1.75rem;
@@ -197,7 +197,6 @@ body{
 }
 
 .form-accept{
-  position: fixed;
   bottom: 18%;
   width: 100%;
   display: block;
@@ -245,12 +244,10 @@ body{
   &--btn{
     background-color: #ff8f00;
     color:#fff;
-    width:90%;
+    width:100%;
     margin: 1rem 0;
-    bottom:8%;
     left:50%;
     height:45px;
-    transform: translateX(-50%);
     @media(max-height: 736px){
       position: relative;
       transform: none;
