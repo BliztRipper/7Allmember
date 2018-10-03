@@ -8,76 +8,78 @@
     <link rel="stylesheet" href="css/style.css"/>
   </head>
   <body>
-    <div class="header d-flex justify-content-center border-bottom">
-      <div class="sprite--logo"></div>
-    </div>
-    <section>
-      <div class="container d-flex align-items-center flex-column">
-        <div class="sprite--allCard"></div><span class="connectCard">เชื่อมบัตร All Member Visa Card</span><span class="connectCard--detail">กรุณากรอกข้อมูลเพิ่มเติม </span>
+    <div class="extend-allmember">
+      <div class="header d-flex justify-content-center border-bottom">
+        <div class="sprite--logo"></div>
       </div>
-    </section>
-    <section>
-      <div class="container form">
-        <form class="needs-validation" action="kyc.html" method="" novalidate="novalidate">
-          <div class="col-12">
-            <label class="form__label" for="validate-tel">เบอร์โทรศัพท์</label>
-            <input class="form-control" id="validate-tel" type="tel" value="" onkeypress="return isNumberKey(event)" placeholder="099-999-9999" pattern=".{12}" required="required"/>
-            <div class="valid-feedback"> </div>
-            <div class="invalid-feedback">กรุณากรอกเบอร์โทรศัพท์ 10 หลัก
-              <div class="invalid-feedback__desc"></div>
+      <section>
+        <div class="container d-flex align-items-center flex-column">
+          <div class="sprite--allCard"></div><span class="connectCard">เชื่อมบัตร All Member Visa Card</span><span class="connectCard--detail">กรุณากรอกข้อมูลเพิ่มเติม</span>
+        </div>
+      </section>
+      <section>
+        <div class="container form">
+          <form class="needs-validation" action="kyc.html" method="" novalidate="novalidate">
+            <div class="col-12">
+              <label class="form__label" for="validate-tel">เบอร์โทรศัพท์</label>
+              <input class="form-control" id="validate-tel" type="tel" value="" onkeypress="return isNumberKey(event)" placeholder="099-999-9999" pattern=".{12}" required="required"/>
+              <div class="valid-feedback"></div>
+              <div class="invalid-feedback">กรุณากรอกเบอร์โทรศัพท์ 10 หลัก
+                <div class="invalid-feedback__desc"></div>
+              </div>
             </div>
-          </div>
-          <div class="col-12 form-row">
-            <label class="form__label" for="validate-id">เลขบัตรประชาชน</label>
-            <input class="form-control" id="validate-id" type="tel" value="" onkeypress="return isNumberKey(event)" placeholder="9-999-9999-9999-9" pattern=".{17}" required="required"/>
-            <div class="valid-feedback"> </div>
-            <div class="invalid-feedback">กรุณากรอกเลขบัตรประชาชน 13 หลัก
-              <div class="invalid-feedback__desc"></div>
+            <div class="col-12 form-row">
+              <label class="form__label" for="validate-id">เลขบัตรประชาชน</label>
+              <input class="form-control" id="validate-id" type="tel" value="" onkeypress="return isNumberKey(event)" placeholder="9-999-9999-9999-9" pattern=".{17}" required="required"/>
+              <div class="valid-feedback"></div>
+              <div class="invalid-feedback">กรุณากรอกเลขบัตรประชาชน 13 หลัก
+                <div class="invalid-feedback__desc"></div>
+              </div>
             </div>
-          </div>
-          <div class="col-12 form-row">
-            <label class="form__label" for="validate-backId">หมายเลขหลังบัตร (Member ID) 18 หลัก </label>
-            <input class="form-control" id="validate-backId" type="tel" value="" onkeypress="return isNumberKey(event)" placeholder="9999-9999-9999-9999-99" pattern=".{22}" required="required"/>
-            <div class="valid-feedback"> </div>
-            <div class="invalid-feedback">กรุณากรอกหมายเลขบัตร 18 หลัก
-              <div class="invalid-feedback__desc"></div>
+            <div class="col-12 form-row">
+              <label class="form__label" for="validate-backId">หมายเลขหลังบัตร (Member ID) 18 หลัก</label>
+              <input class="form-control" id="validate-backId" type="tel" value="" onkeypress="return isNumberKey(event)" placeholder="9999-9999-9999-9999-99" pattern=".{22}" required="required"/>
+              <div class="valid-feedback"></div>
+              <div class="invalid-feedback">กรุณากรอกหมายเลขบัตร 18 หลัก
+                <div class="invalid-feedback__desc"></div>
+              </div>
             </div>
-          </div>
-          <div class="col-12 form-row">
-            <label class="form__label" for="validate-frontId">หมายเลขหน้าบัตร 4 หลักสุดท้าย</label>
-            <input class="form-control" id="validate-frontId" type="tel" value="" onkeypress="return isNumberKey(event)" placeholder="9999" pattern=".{4}" required="required"/>
-            <div class="valid-feedback"> </div>
-            <div class="invalid-feedback">กรุณากรอกหมายเลขหน้าบัตร 4 หลัก 
-              <div class="invalid-feedback__desc"></div>
+            <div class="col-12 form-row">
+              <label class="form__label" for="validate-frontId">หมายเลขหน้าบัตร 4 หลักสุดท้าย</label>
+              <input class="form-control" id="validate-frontId" type="tel" value="" onkeypress="return isNumberKey(event)" placeholder="9999" pattern=".{4}" required="required"/>
+              <div class="valid-feedback"></div>
+              <div class="invalid-feedback">กรุณากรอกหมายเลขหน้าบัตร 4 หลัก
+                <div class="invalid-feedback__desc"></div>
+              </div>
             </div>
-          </div>
-          <div class="col-12 form-row">
-            <input class="form__label styled-checkbox form-check-input" id="styled-checkbox-2" type="checkbox" required="required"/>
-            <label class="connect__term" for="styled-checkbox-2">ยอมรับ <div style="color:#147bd1; display:inline" data-toggle='modal' data-target='#tc'>ข้อกำหนด</div> และ <div style="color:#147bd1; display:inline" data-toggle='modal' data-target='#tc'>เงื่อนไขความเป็นส่วนตัว</div></label>
-            <div class="invalid-feedback">กรุณากดยอมรับข้อกำหนดและเงื่อนไข         </div>
-          </div>
-          <div class="next"> 
-            <button class="btn next--btn btn-secondary" id="check-invalid" type="submit" disabled="disabled">ถัดไป</button>
-          </div>
-          <div class="modal fade" id="tc" tabidnex="-1" role="dialog" aria-labelledby="TermModal" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header"> 
-                  <h5 class="modal-title" id="TermModal">เงื่อนไขและกติกาการร่วมกิจกรรม</h5>
-                  <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                </div>
-                <div class="modal-body"> 
-                  <p>เงื่อนไขการใช้บริการ True Money Wallet ผ่านทางแอปพลิเคชัน 7-Eleven TH โดยการคลิกปุ่ม “ยอมรับข้อกำหนดและเงื่อนไข” ด้านล่างนี้ ข้าพเจ้า (ต่อไปจะเรียกว่า “ผู้ใช้บริการ”) ตกลงที่จะใช้บริการของบริษัท ทรู มันนี่ จำกัด (ต่อไปจะเรียกว่า “บริษัท”) ซึ่งเป็นผู้ให้บริการเงินอิเล็กทรอนิกส์ เพื่อให้ผู้ใช้บริการสามารถใช้เงินอิเล็กทรอนิกส์ซึ่งได้เติมเงินเข้ากระเป๋าเงินอิเล็กทรอนิกส์ของผู้ใช้บริการซึ่งให้บริการโดยบริษัท (ต่อไปนี้จะเรียกว่า “True Money Wallet”) ไว้ล่วงหน้าแล้ว มาชำระค่าสินค้าแทนการชำระด้วยเงินสด ณ ร้าน 7-Eleven หรือร้านค้าอื่นใดตามที่บริษัทกำหนด ผ่านทางแอปพลิเคชัน7-Eleven TH (ต่อไปจะเรียกว่า “บริการ”) และผู้ใช้บริการตกลงที่จะปฏิบัติและผูกพันตามข้อกำหนดและเงื่อนไขการใช้บริการ ของบริษัท ทรู มันนี่ จำกัด (ต่อไปจะเรียกว่า “ข้อกำหนดและเงื่อนไข”) ดังต่อไปนี้ทุกประการ </p>
-                </div>
-                <div class="modal-footer">
-                  <button class="btn next--btn" type="button" data-dismiss="modal">ปิด  </button>
+            <div class="col-12 form-row">
+              <input class="form__label styled-checkbox form-check-input" id="styled-checkbox-2" type="checkbox" required="required"/>
+              <label class="connect__term" for="styled-checkbox-2">ยอมรับ <div style="color:#147bd1; display:inline" data-toggle='modal' data-target='#tc'>ข้อกำหนด</div> และ <div style="color:#147bd1; display:inline" data-toggle='modal' data-target='#tc'>เงื่อนไขความเป็นส่วนตัว</div></label>
+              <div class="invalid-feedback">กรุณากดยอมรับข้อกำหนดและเงื่อนไข</div>
+            </div>
+            <div class="next-step">
+              <button class="btn next-step--btn btn-secondary" id="check-invalid" type="submit" disabled="disabled">ถัดไป</button>
+            </div>
+            <div class="modal fade" id="tc" tabidnex="-1" role="dialog" aria-labelledby="TermModal" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="TermModal">เงื่อนไขและกติกาการร่วมกิจกรรม</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>เงื่อนไขการใช้บริการ True Money Wallet ผ่านทางแอปพลิเคชัน 7-Eleven TH โดยการคลิกปุ่ม “ยอมรับข้อกำหนดและเงื่อนไข” ด้านล่างนี้ ข้าพเจ้า (ต่อไปจะเรียกว่า “ผู้ใช้บริการ”) ตกลงที่จะใช้บริการของบริษัท ทรู มันนี่ จำกัด (ต่อไปจะเรียกว่า “บริษัท”) ซึ่งเป็นผู้ให้บริการเงินอิเล็กทรอนิกส์ เพื่อให้ผู้ใช้บริการสามารถใช้เงินอิเล็กทรอนิกส์ซึ่งได้เติมเงินเข้ากระเป๋าเงินอิเล็กทรอนิกส์ของผู้ใช้บริการซึ่งให้บริการโดยบริษัท (ต่อไปนี้จะเรียกว่า “True Money Wallet”) ไว้ล่วงหน้าแล้ว มาชำระค่าสินค้าแทนการชำระด้วยเงินสด ณ ร้าน 7-Eleven หรือร้านค้าอื่นใดตามที่บริษัทกำหนด ผ่านทางแอปพลิเคชัน7-Eleven TH (ต่อไปจะเรียกว่า “บริการ”) และผู้ใช้บริการตกลงที่จะปฏิบัติและผูกพันตามข้อกำหนดและเงื่อนไขการใช้บริการ ของบริษัท ทรู มันนี่ จำกัด (ต่อไปจะเรียกว่า “ข้อกำหนดและเงื่อนไข”) ดังต่อไปนี้ทุกประการ</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn next-step--btn" type="button" data-dismiss="modal">ปิด</button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </form>
-      </div>
-    </section>
+          </form>
+        </div>
+      </section>
+    </div>
     <script src="js/main.js"></script>
     <script>
       var formatPhone = new Cleave('#validate-tel', {

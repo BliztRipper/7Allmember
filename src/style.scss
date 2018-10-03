@@ -2,25 +2,59 @@
 :root {
   padding: constant(safe-area-inset-top) constant(safe-area-inset-right) constant(safe-area-inset-bottom) constant(safe-area-inset-left);
 }
-body{
-  font-family: -apple-system, BlinkMacSystemFont, //Safari Mac/iOS, Chrome
-  'Segoe UI',Roboto,Oxygen, //Window, Android, KDE
-  Ubuntu,Cantarell,'Fira Sans', //Ubuntu, Gnome, Firefox OS
-  'Open Sans','Droid Sans','Helvetica Neue',sans-serif; //Old
-  font-size: 16px;
-  .btn-secondary{
-    background-color: #e6e6e6 !important;
-    border: 0 !important;
+
+.next-step{
+  &--btn{
+    background-color: #ff8f00;
+    color:#fff;
+    width:100%;
+    margin: 1rem 0;
+    left:50%;
+    height:45px;
+    @media(max-height: 736px){
+      position: relative;
+      transform: none;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin: 1.5rem 0;
+    }
   }
 }
 
+.cancle{
+  &--btn {
+    position: fixed;
+    color: #fff;
+    width: 90%;
+    margin: 1rem 0;
+    bottom: 0;
+    left: 50%;
+    height:45px;
+    transform: translateX(-50%);
+    color:#999;
+    background-color: transparent;
+    @media(max-height: 666px) {
+      position: relative;
+      transform: none;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin: 1.5rem 0;
+    }
+  }
+}
 .sprite{
   display: inline-block;
   background: url(./sprite.png) no-repeat;
   vertical-align: middle;
   &--allCard{
     @extend .sprite;
-    background-position: -12px -12px; 
+    background-position: -12px -12px;
     width: 92px;
     height: 60px;
     margin-top:1.75rem;
@@ -48,21 +82,29 @@ body{
     @extend .sprite;
     background-position: -344px -12px;
     width: 56px;
-    height: 56px; 
+    height: 56px;
   }
   &--arrow{
     @extend .sprite;
     background-position: -293px -215px;
     width: 16px;
-    height: 40px; 
+    height: 40px;
   }
   &--success{
     @extend .sprite;
     background-position: -12px -92px;
     width: 194px;
-    height: 135px; 
+    height: 135px;
   }
 }
+
+.extend-allmember{
+
+.btn-secondary{
+  background-color: #e6e6e6 !important;
+  border: 0 !important;
+}
+
 
 .header{
   &__title{
@@ -113,7 +155,7 @@ body{
   border-bottom: 2px solid #ddd;
   color:#333;
   font-weight: bold;
-  } 
+  }
   &__ref{
     color:#bababa;
     font-size: 0.875rem;
@@ -137,7 +179,7 @@ body{
   .form-control{
     &::placeholder{
       font-size: 0.875rem;
-      color:#999; 
+      color:#999;
     }
     &:focus{
       border:0;
@@ -192,7 +234,7 @@ body{
   }
   &__term{
     font-size: 0.875rem;
-    color:#808080; 
+    color:#808080;
   }
 }
 
@@ -207,7 +249,7 @@ body{
   }
   .form-group{
     padding-left: 0;
-  }  
+  }
 }
 .checkbox{
   width: 25px;
@@ -231,58 +273,13 @@ body{
   .modal-title{
     font-size: 1.125rem;
     margin-top: 2rem;
-    text-align: center; 
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
   }
 }
 .modal-footer{
-  border: 0; 
-}
-
-.next{
-  &--btn{
-    background-color: #ff8f00;
-    color:#fff;
-    width:100%;
-    margin: 1rem 0;
-    left:50%;
-    height:45px;
-    @media(max-height: 736px){
-      position: relative;
-      transform: none;
-      left: 0;
-      right: 0;
-      display: flex;
-      justify-content: center;
-      width: 100%;
-      margin: 1.5rem 0;
-    }
-  }
-}
-.cancle{
-  &--btn {
-    position: fixed;
-    color: #fff;
-    width: 90%;
-    margin: 1rem 0;
-    bottom: 0;
-    left: 50%;
-    height:45px;
-    transform: translateX(-50%);
-    color:#999;
-    background-color: transparent;
-    @media(max-height: 666px) {
-      position: relative;
-      transform: none;
-      left: 0;
-      right: 0;
-      display: flex;
-      justify-content: center;
-      width: 100%;
-      margin: 1.5rem 0;
-    }
-  }
+  border: 0;
 }
 
 .styled-checkbox {
@@ -336,4 +333,5 @@ body{
       left: 6px;
     }
   }
+}
 }

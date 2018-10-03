@@ -1,33 +1,33 @@
 extends _template
 block body
-  .header.d-flex.justify-content-center.border-bottom
-    h1.header__title ยืนยันการเชื่อมต่อบัญชี
-  .container
-    .wraper.mx-auto(style='width:150px;')
-      .d-flex.align-items-center.justify-content-around(style='height:200px; padding-top:50px;')
-        .sprite--7app
-        .sprite--arrow
-        .sprite--tmnapp
-    p.connect__text เชื่อมบัตร All Member Visa Card <br/>กับบัญชีทรูมันนี่ วอลเล็ท
-    form.form-accept.needs-validation(action='success.html' novalidate)
-      .form-group
-        .form-check.pl-0
-          input.styled-checkbox.form-check-input#styled-checkbox-2(type="checkbox" required)
-          label.connect__term(for='styled-checkbox-2') ยอมรับ <div style="color:#147bd1; display:inline" data-toggle='modal' data-target='#tc'>ข้อกำหนด</div> และ <div style="color:#147bd1; display:inline" data-toggle='modal' data-target='#tc'>เงื่อนไขความเป็นส่วนตัว</div>
-          .invalid-feedback กรุณากดยอมรับข้อกำหนดและเงื่อนไข
-        .next  
-          button.btn.next--btn.btn-secondary#check-invalid(type='submit' disabled) ถัดไป
-        .cancle  
-          button.btn.cancle--btn.btn-secondary(type='reset') ยกเลิก
-          #tc.modal.fade(tabidnex='-1' role='dialog' aria-labelledby='TermModal' aria-hidden='true')
-            .modal-dialog(role='document')
-              .modal-content
-                .modal-header 
-                  h5#TermModal.modal-title เงื่อนไขและกติกาการร่วมกิจกรรม
-                  button(type="button" class="close" data-dismiss="modal" aria-label="Close")
-                    span(aria-hidden="true") &times;
-                .modal-body 
-                  p เงื่อนไขการใช้บริการ True Money Wallet ผ่านทางแอปพลิเคชัน 7-Eleven TH โดยการคลิกปุ่ม “ยอมรับข้อกำหนดและเงื่อนไข” ด้านล่างนี้ ข้าพเจ้า (ต่อไปจะเรียกว่า “ผู้ใช้บริการ”) ตกลงที่จะใช้บริการของบริษัท ทรู มันนี่ จำกัด (ต่อไปจะเรียกว่า “บริษัท”) ซึ่งเป็นผู้ให้บริการเงินอิเล็กทรอนิกส์ เพื่อให้ผู้ใช้บริการสามารถใช้เงินอิเล็กทรอนิกส์ซึ่งได้เติมเงินเข้ากระเป๋าเงินอิเล็กทรอนิกส์ของผู้ใช้บริการซึ่งให้บริการโดยบริษัท (ต่อไปนี้จะเรียกว่า “True Money Wallet”) ไว้ล่วงหน้าแล้ว มาชำระค่าสินค้าแทนการชำระด้วยเงินสด ณ ร้าน 7-Eleven หรือร้านค้าอื่นใดตามที่บริษัทกำหนด ผ่านทางแอปพลิเคชัน7-Eleven TH (ต่อไปจะเรียกว่า “บริการ”) และผู้ใช้บริการตกลงที่จะปฏิบัติและผูกพันตามข้อกำหนดและเงื่อนไขการใช้บริการ ของบริษัท ทรู มันนี่ จำกัด (ต่อไปจะเรียกว่า “ข้อกำหนดและเงื่อนไข”) ดังต่อไปนี้ทุกประการ 
-                .modal-footer
-                  button.btn.next--btn(type='button', data-dismiss='modal') ปิด     
-      
+  .extend-allmember
+    .header.d-flex.justify-content-center.border-bottom
+      h1.header__title ยืนยันการเชื่อมต่อบัญชี
+    .container
+      .wraper.mx-auto(style='width:150px;')
+        .d-flex.align-items-center.justify-content-around(style='height:200px; padding-top:50px;')
+          .sprite--7app
+          .sprite--arrow
+          .sprite--tmnapp
+      p.connect__text เชื่อมบัตร All Member Visa Card <br/>กับบัญชีทรูมันนี่ วอลเล็ท
+      form.form-accept.needs-validation(action='success.html' novalidate)
+        .form-group
+          .form-check.pl-0
+            input.styled-checkbox.form-check-input#styled-checkbox-2(type="checkbox" required)
+            label.connect__term(for='styled-checkbox-2') ยอมรับ <div style="color:#147bd1; display:inline" data-toggle='modal' data-target='#tc'>ข้อกำหนด</div> และ <div style="color:#147bd1; display:inline" data-toggle='modal' data-target='#tc'>เงื่อนไขความเป็นส่วนตัว</div>
+            .invalid-feedback กรุณากดยอมรับข้อกำหนดและเงื่อนไข
+          .next-step
+            button.btn.next-step--btn.btn-secondary#check-invalid(type='submit' disabled) ถัดไป
+          .cancle
+            button.btn.cancle--btn.btn-secondary(type='reset') ยกเลิก
+            #tc.modal.fade(tabidnex='-1' role='dialog' aria-labelledby='TermModal' aria-hidden='true')
+              .modal-dialog(role='document')
+                .modal-content
+                  .modal-header
+                    h5#TermModal.modal-title เงื่อนไขและกติกาการร่วมกิจกรรม
+                    button(type="button" class="close" data-dismiss="modal" aria-label="Close")
+                      span(aria-hidden="true") &times;
+                  .modal-body
+                    p เงื่อนไขการใช้บริการ True Money Wallet ผ่านทางแอปพลิเคชัน 7-Eleven TH โดยการคลิกปุ่ม “ยอมรับข้อกำหนดและเงื่อนไข” ด้านล่างนี้ ข้าพเจ้า (ต่อไปจะเรียกว่า “ผู้ใช้บริการ”) ตกลงที่จะใช้บริการของบริษัท ทรู มันนี่ จำกัด (ต่อไปจะเรียกว่า “บริษัท”) ซึ่งเป็นผู้ให้บริการเงินอิเล็กทรอนิกส์ เพื่อให้ผู้ใช้บริการสามารถใช้เงินอิเล็กทรอนิกส์ซึ่งได้เติมเงินเข้ากระเป๋าเงินอิเล็กทรอนิกส์ของผู้ใช้บริการซึ่งให้บริการโดยบริษัท (ต่อไปนี้จะเรียกว่า “True Money Wallet”) ไว้ล่วงหน้าแล้ว มาชำระค่าสินค้าแทนการชำระด้วยเงินสด ณ ร้าน 7-Eleven หรือร้านค้าอื่นใดตามที่บริษัทกำหนด ผ่านทางแอปพลิเคชัน7-Eleven TH (ต่อไปจะเรียกว่า “บริการ”) และผู้ใช้บริการตกลงที่จะปฏิบัติและผูกพันตามข้อกำหนดและเงื่อนไขการใช้บริการ ของบริษัท ทรู มันนี่ จำกัด (ต่อไปจะเรียกว่า “ข้อกำหนดและเงื่อนไข”) ดังต่อไปนี้ทุกประการ
+                  .modal-footer
+                    button.btn.next-step--btn(type='button', data-dismiss='modal') ปิด

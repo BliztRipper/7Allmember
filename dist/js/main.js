@@ -6458,7 +6458,7 @@
 //@prepros-prepend ../node_modules/jquery/dist/jquery.min.js
 //@prepros-prepend ../node_modules/jq-signature/jq-signature.min.js
 //@prepros-prepend ../node_modules/bootstrap/dist/js/bootstrap.bundle.js
-//@prepros-prepend ../node_modules/cleave.js/dist/cleave.min.js 
+//@prepros-prepend ../node_modules/cleave.js/dist/cleave.min.js
 
 /*Form Validation*/
 (function form_check() {
@@ -6484,12 +6484,12 @@
 })();
 
 $('#styled-checkbox-2').click(function(){
-  var $list = $('.next--btn');
+  var $list = $('.next-step--btn');
   var btnClass = $('#check-invalid')
   if ($list.attr('disabled')) {
     $list.removeAttr('disabled');
     btnClass.removeClass("btn-secondary");
-  } else { 
+  } else {
     $list.attr('disabled', 'disabled');
     btnClass.addClass("btn-secondary");
   }
@@ -6510,14 +6510,14 @@ $(document).ready(function (){
 /* Signature Section */
 $('.js-signature').jqSignature();
 $('.js-signature').on('jq.signature.changed', function () {
-  $('.next--btn').attr('disabled', false);
-  $('.next--btn').removeClass('btn-secondary');
+  $('.next-step--btn').attr('disabled', false);
+  $('.next-step--btn').removeClass('btn-secondary');
 });
 
 function clearCanvas() {
   $('.js-signature').jqSignature('clearCanvas');
-  $('.next--btn').attr('disabled', true);
-  $('.next--btn').addClass('btn-secondary');
+  $('.next-step--btn').attr('disabled', true);
+  $('.next-step--btn').addClass('btn-secondary');
 }
 function saveCanvas() {
   var signature = $('.js-signature').jqSignature('getDataURL');

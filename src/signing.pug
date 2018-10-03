@@ -1,16 +1,16 @@
 extends _template
 block body
-  .header.d-flex.justify-content-center.border-bottom
-    .sprite--logo
-  section
-    .container.d-flex.align-items-center.flex-column
-      h2.signature--detail.pb-4.pt-4 กรุณาเซ็นชื่อของคุณ
-      .js-signature(data-border="1px solid #979797" data-line-color="#ff8300" data-height="280" data-auto-fit="true")
-      .signature-action
-        .sprite--signature
-        .clear-sign.d-inline-block(onclick="clearCanvas();") เซ็นใหม่  
-    .container
-      .term-sign.pt-5 รองรับตั้งแต่ Android 4.0 หรือ iOS 7.0 ขึ้นไป และแนะนำให้ใช้ Google Chrome เพื่อการแสดงผลที่สมบูรณ์      
-      .next  
-        button.btn.next--btn.btn-secondary(type='submit' onclick="saveCanvas();" disabled) ถัดไป
-      
+  .extend-allmember
+    .header.d-flex.justify-content-center.border-bottom
+      .sprite--logo
+    section
+      .container.d-flex.align-items-center.flex-column
+        h2.signature--detail.pb-4.pt-4 กรุณาเซ็นชื่อของคุณ
+        .js-signature(data-border="1px solid #979797" data-line-color="#ff8300" data-height="280" data-auto-fit="true")
+        .signature-action
+          .sprite--signature
+          .clear-sign.d-inline-block(onclick="clearCanvas();") เซ็นใหม่
+      .container
+        .term-sign.pt-5 รองรับตั้งแต่ Android 4.0 หรือ iOS 7.0 ขึ้นไป และแนะนำให้ใช้ Google Chrome เพื่อการแสดงผลที่สมบูรณ์
+        .next-step
+          button.btn.next-step--btn.btn-secondary(type='submit' onclick="saveCanvas();" disabled) ถัดไป

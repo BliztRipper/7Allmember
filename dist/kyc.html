@@ -8,99 +8,101 @@
     <link rel="stylesheet" href="css/style.css"/>
   </head>
   <body>
-    <div class="header d-flex justify-content-center border-bottom">
-      <div class="sprite--logo"></div>
+    <div class="extend-allmember">
+      <div class="header d-flex justify-content-center border-bottom">
+        <div class="sprite--logo"></div>
+      </div>
+      <section>
+        <div class="container d-flex align-items-center flex-column">
+          <div class="sprite--allCard"></div><span class="connectCard">เชื่อมบัตร All Member Visa Card</span><span class="connectCard--detail">กรุณากรอกข้อมูลเพิ่มเติม</span>
+        </div>
+      </section>
+      <section>
+        <div class="container form">
+          <form class="needs-validation" action="signing.html" method="" novalidate="novalidate">
+            <div class="col-12 form-row">
+              <label class="form__label" for="validate-name">ชื่อ (ภาษาไทย)</label>
+              <input class="form-control" id="validate-name" type="text" placeholder="กิตติ" required="required"/>
+              <div class="valid-feedback"></div>
+              <div class="invalid-feedback">กรุณากรอกชื่อภาษาไทย
+                <div class="invalid-feedback__desc"></div>
+              </div>
+            </div>
+            <div class="col-12 form-row">
+              <label class="form__label" for="validate-surname">นามสกุล (ภาษาไทย)</label>
+              <input class="form-control" id="validate-surname" type="text" placeholder="สิงหาคม" required="required"/>
+              <div class="valid-feedback"></div>
+              <div class="invalid-feedback">กรุณากรอกนามสกุลภาษาไทย
+                <div class="invalid-feedback__desc"></div>
+              </div>
+            </div>
+            <div class="col-12 form-row">
+              <label class="form__label" for="validate-name-eng">ชื่อ (ภาษาอังกฤษ)</label>
+              <input class="form-control" id="validate-name-eng" type="text" placeholder="Kitti" required="required"/>
+              <div class="valid-feedback"></div>
+              <div class="invalid-feedback">กรุณากรอกชื่อภาษาอังกฤษ
+                <div class="invalid-feedback__desc"></div>
+              </div>
+            </div>
+            <div class="col-12 form-row">
+              <label class="form__label" for="validate-surname-eng">นามสกุล (ภาษาอังกฤษ)</label>
+              <input class="form-control" id="validate-surname-eng" type="text" placeholder="Singhakom" required="required"/>
+              <div class="valid-feedback"></div>
+              <div class="invalid-feedback">กรุณากรอกนามสกุลภาษาอังกฤษ
+                <div class="invalid-feedback__desc"></div>
+              </div>
+            </div>
+            <div class="col-12 form-row">
+              <label class="form__label" for="validate-dob">วัน / เดือน / พ.ศ.</label>
+              <input class="form-control" id="validate-dob" type="tel" placeholder="" required="required"/>
+              <div class="valid-feedback"></div>
+              <div class="invalid-feedback">กรุณากรอกวันเดือนปีเกิด
+                <div class="invalid-feedback__desc"></div>
+              </div>
+            </div>
+            <div class="col-12 form-row">
+              <label class="form__label" for="validate-home-address">ที่อยู่ตามทะเบียนบ้าน</label>
+              <input class="form-control" id="validate-home-address" type="text" placeholder="123 ถ.รัชดาภิเษก ดินแดง กรุงเทพ..." required="required"/>
+              <div class="valid-feedback"></div>
+              <div class="invalid-feedback">กรุณากรอกที่อยู่ตามทะเบียนบ้าน
+                <div class="invalid-feedback__desc"></div>
+              </div>
+            </div>
+            <div class="col-12 form-row">
+              <label class="form__label" for="validate-address">ที่อยู่ปัจจุบัน</label>
+              <input class="form-control" id="validate-address" type="text" placeholder="123 ถ.รัชดาภิเษก ดินแดง กรุงเทพ..." required="required"/>
+              <div class="invalid-feedback">กรุณากรอกที่อยู่ปัจจุบัน
+                <div class="invalid-feedback__desc"></div>
+              </div>
+            </div>
+            <div class="col-12 form-row">
+              <label class="form__label" for="validate-job">อาชีพ</label>
+              <select class="custom-select form-control" id="validate-job" required="required">
+                <option></option>
+                <option>เศรษฐี</option>
+                <option>Hi-So</option>
+                <option>พนักงานบริษัทที่หน้าตาดีและมีตังเยอะ</option>
+              </select>
+              <div class="valid-feedback"></div>
+              <div class="invalid-feedback">กรุณาเลือกอาชีพ
+                <div class="invalid-feedback__desc"></div>
+              </div>
+            </div>
+            <div class="col-12 form-row">
+              <label class="form__label" for="validate-jobaddress">สถานที่ทำงาน</label>
+              <input class="form-control" id="validate-jobaddress" type="text" placeholder="ชื่อบริษัท, จังหวัด" required="required"/>
+              <div class="valid-feedback"></div>
+              <div class="invalid-feedback"> กรุณากรอกที่อยู่ที่ทำงาน
+                <div class="invalid-feedback__desc"></div>
+              </div>
+            </div>
+            <div class="next-step form-row">
+              <button class="btn next-step--btn btn-secondary" id="check-invalid" type="submit" disabled="disabled">ถัดไป</button>
+            </div>
+          </form>
+        </div>
+      </section>
     </div>
-    <section>
-      <div class="container d-flex align-items-center flex-column">
-        <div class="sprite--allCard"></div><span class="connectCard">เชื่อมบัตร All Member Visa Card</span><span class="connectCard--detail">กรุณากรอกข้อมูลเพิ่มเติม </span>
-      </div>
-    </section>
-    <section>
-      <div class="container form">
-        <form class="needs-validation" action="signing.html" method="" novalidate="novalidate">
-          <div class="col-12 form-row">
-            <label class="form__label" for="validate-name">ชื่อ (ภาษาไทย)</label>
-            <input class="form-control" id="validate-name" type="text" placeholder="กิตติ" required="required"/>
-            <div class="valid-feedback"> </div>
-            <div class="invalid-feedback">กรุณากรอกชื่อภาษาไทย
-              <div class="invalid-feedback__desc"></div>
-            </div>
-          </div>
-          <div class="col-12 form-row">
-            <label class="form__label" for="validate-surname">นามสกุล (ภาษาไทย)</label>
-            <input class="form-control" id="validate-surname" type="text" placeholder="สิงหาคม" required="required"/>
-            <div class="valid-feedback"> </div>
-            <div class="invalid-feedback">กรุณากรอกนามสกุลภาษาไทย
-              <div class="invalid-feedback__desc"></div>
-            </div>
-          </div>
-          <div class="col-12 form-row">
-            <label class="form__label" for="validate-name-eng">ชื่อ (ภาษาอังกฤษ)</label>
-            <input class="form-control" id="validate-name-eng" type="text" placeholder="Kitti" required="required"/>
-            <div class="valid-feedback"> </div>
-            <div class="invalid-feedback">กรุณากรอกชื่อภาษาอังกฤษ
-              <div class="invalid-feedback__desc"></div>
-            </div>
-          </div>
-          <div class="col-12 form-row">
-            <label class="form__label" for="validate-surname-eng">นามสกุล (ภาษาอังกฤษ)</label>
-            <input class="form-control" id="validate-surname-eng" type="text" placeholder="Singhakom" required="required"/>
-            <div class="valid-feedback"> </div>
-            <div class="invalid-feedback">กรุณากรอกนามสกุลภาษาอังกฤษ
-              <div class="invalid-feedback__desc"></div>
-            </div>
-          </div>
-          <div class="col-12 form-row">
-            <label class="form__label" for="validate-dob">วัน / เดือน / พ.ศ.</label>
-            <input class="form-control" id="validate-dob" type="tel" placeholder="" required="required"/>
-            <div class="valid-feedback"> </div>
-            <div class="invalid-feedback">กรุณากรอกวันเดือนปีเกิด
-              <div class="invalid-feedback__desc"></div>
-            </div>
-          </div>
-          <div class="col-12 form-row">
-            <label class="form__label" for="validate-home-address">ที่อยู่ตามทะเบียนบ้าน</label>
-            <input class="form-control" id="validate-home-address" type="text" placeholder="123 ถ.รัชดาภิเษก ดินแดง กรุงเทพ..." required="required"/>
-            <div class="valid-feedback"> </div>
-            <div class="invalid-feedback">กรุณากรอกที่อยู่ตามทะเบียนบ้าน
-              <div class="invalid-feedback__desc"></div>
-            </div>
-          </div>
-          <div class="col-12 form-row">
-            <label class="form__label" for="validate-address">ที่อยู่ปัจจุบัน</label>
-            <input class="form-control" id="validate-address" type="text" placeholder="123 ถ.รัชดาภิเษก ดินแดง กรุงเทพ..." required="required"/>
-            <div class="invalid-feedback">กรุณากรอกที่อยู่ปัจจุบัน
-              <div class="invalid-feedback__desc"></div>
-            </div>
-          </div>
-          <div class="col-12 form-row">
-            <label class="form__label" for="validate-job">อาชีพ</label>
-            <select class="custom-select form-control" id="validate-job" required="required">
-              <option> </option>
-              <option>เศรษฐี </option>
-              <option>Hi-So </option>
-              <option>พนักงานบริษัทที่หน้าตาดีและมีตังเยอะ </option>
-            </select>
-            <div class="valid-feedback"> </div>
-            <div class="invalid-feedback">กรุณาเลือกอาชีพ
-              <div class="invalid-feedback__desc">    </div>
-            </div>
-          </div>
-          <div class="col-12 form-row">
-            <label class="form__label" for="validate-jobaddress">สถานที่ทำงาน</label>
-            <input class="form-control" id="validate-jobaddress" type="text" placeholder="ชื่อบริษัท, จังหวัด" required="required"/>
-            <div class="valid-feedback"> </div>
-            <div class="invalid-feedback"> กรุณากรอกที่อยู่ที่ทำงาน
-              <div class="invalid-feedback__desc"></div>
-            </div>
-          </div>
-          <div class="next form-row">
-            <button class="btn next--btn btn-secondary" id="check-invalid" type="submit" disabled="disabled">ถัดไป</button>
-          </div>
-        </form>
-      </div>
-    </section>
     <script src="js/main.js"></script>
     <script>
       var formatBackID = new Cleave('#validate-dob', {
